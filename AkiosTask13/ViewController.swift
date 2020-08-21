@@ -14,9 +14,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     //チェックリスト（タプルの配列）
     private var checkList = [(text:"リンゴ",keyCheck:false),
-                                  (text:"オレンジ",keyCheck:true),
-                                  (text:"バナナ",keyCheck:false),
-                                  (text:"パイナップル",keyCheck:true)]
+                             (text:"オレンジ",keyCheck:true),
+                             (text:"バナナ",keyCheck:false),
+                             (text:"パイナップル",keyCheck:true)]
 
     override func viewDidLoad() {
         super.viewDidLoad()

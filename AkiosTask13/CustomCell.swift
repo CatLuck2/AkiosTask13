@@ -25,6 +25,8 @@ class CustomCell: UITableViewCell {
         //チェックマークの画像を表示
         if keyCheck {
             checkItemImage.image = UIImage(systemName: "checkmark")
+        } else {
+            checkItemImage.image = UIImage(systemName: "")
         }
         //チェックリストのテキストを表示
         checkItemLabel.text = text
