@@ -13,7 +13,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet private weak var checkListTableView: UITableView!
     
     //チェックリスト（タプルの配列）
-    private(set) var checkList = [(text:"リンゴ",keyCheck:false),
+    private var checkList = [(text:"リンゴ",keyCheck:false),
                                   (text:"オレンジ",keyCheck:true),
                                   (text:"バナナ",keyCheck:false),
                                   (text:"パイナップル",keyCheck:true)]
