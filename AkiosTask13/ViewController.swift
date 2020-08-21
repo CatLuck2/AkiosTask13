@@ -12,21 +12,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet private weak var checkListTableView: UITableView!
     
-    //チェックリスト
-    private(set) var checkList           = [(text:String, keyCheck:Bool)]()
-    //チェックリストの初期アイテム
-    private(set) var initalCheckListData = [(text:"リンゴ",keyCheck:false),
-                                            (text:"オレンジ",keyCheck:true),
-                                            (text:"バナナ",keyCheck:false),
-                                            (text:"パイナップル",keyCheck:true)]
+    //チェックリスト（タプルの配列）
+    private(set) var checkList = [(text:"リンゴ",keyCheck:false),
+                                  (text:"オレンジ",keyCheck:true),
+                                  (text:"バナナ",keyCheck:false),
+                                  (text:"パイナップル",keyCheck:true)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //初期データを入れていく
-        for i in 0..<initalCheckListData.count {
-            checkList.append(initalCheckListData[i])
-        }
         
         //checkListTableViewの設定
         checkListTableView.delegate   = self

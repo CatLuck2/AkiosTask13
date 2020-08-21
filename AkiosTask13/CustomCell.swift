@@ -10,8 +10,8 @@ import UIKit
 
 class CustomCell: UITableViewCell {
     
-    @IBOutlet private(set) weak var checkMarkImage: UIImageView!
-    @IBOutlet private(set) weak var checkMarkLabel: UILabel!
+    @IBOutlet private(set) weak var checkItemImage: UIImageView!
+    @IBOutlet private(set) weak var checkItemLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,10 +24,10 @@ class CustomCell: UITableViewCell {
     func configure(text:String, keyCheck:Bool) {
         //チェックマークの画像を表示
         if keyCheck {
-            checkMarkImage.image = UIImage(systemName: "checkmark")
+            checkItemImage.image = UIImage(systemName: "checkmark")
         }
         //チェックリストのテキストを表示
-        checkMarkLabel.text = text
+        checkItemLabel.text = text
     }
     
 }
